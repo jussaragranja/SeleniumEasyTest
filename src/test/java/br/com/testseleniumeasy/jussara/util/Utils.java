@@ -20,7 +20,7 @@ public abstract class Utils {
 	
 	public static String getDataAtualFormatddMMyyyy(){
 		try {
-			SimpleDateFormat formatDate = new SimpleDateFormat("ddMMyyyy");
+			SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/yyyy");
 			Calendar calendar = new GregorianCalendar();
 			Date data = new Date();
 			calendar.setTime(data);

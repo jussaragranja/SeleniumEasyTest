@@ -12,17 +12,33 @@ public class PageTableDataSearch extends PageBase<PageTableDataSearch> {
     @FindBy(id = "task-table-filter")
     private WebElement inputFilterTask;
 
-    @FindBy(id = "task-table")
-    private WebElement taskTable;
+    @FindBy(xpath = "//*[@id=\"task-table\"]/tbody")
+    private List<WebElement> taskTable;
 
-    @FindBy(xpath = "./html/body/div[2]/div/div[2]/div[2]/div/table")
-    private WebElement tableListedUsers;
+    @FindBy(xpath = "/html/body/div[2]/div/div[2]/div[2]/div/table/tbody")
+    private List<WebElement> tableListedUsers;
 
     @FindBy(xpath = "/html/body/div[2]/div/div[2]/div[2]/div/div/div/button/span")
     private WebElement buttonFilter;
 
     @FindBy(xpath = "/html/body/div[2]/div/div[2]/div[2]/div/table/thead/tr/th[1]/input")
     private WebElement filterUserId;
+
+    public PageTableDataSearch filterTask() throws InterruptedException {
+        Thread.sleep(500);
+        preencherCampo(inputFilterTask, "bug");
+
+        return this;
+    }
+
+    public PageTableDataSearch assertTableTask() throws InterruptedException {
+        Thread.sleep(1000);
+        for(WebElement element: taskTable){
+            Assert.assertEquals(element.getText(), "7 Bug fixing Kilgore Trout in progress");
+        }
+
+        return this;
+    }
 
 
     public PageTableDataSearch clickButtonFilter() throws InterruptedException {
@@ -34,14 +50,16 @@ public class PageTableDataSearch extends PageBase<PageTableDataSearch> {
 
     public PageTableDataSearch filterUserById() throws InterruptedException {
         Thread.sleep(1000);
-        preencherCampo(filterUserId, "1");
+        preencherCampo(filterUserId, "3");
 
         return this;
     }
 
     public PageTableDataSearch assertTableUsers(){
-        List<WebElement> table = getLinhaTable(tableListedUsers);
-        Assert.assertEquals("display: table-row;", table.get(5).getAttribute("style"));
+
+        for(WebElement element: tableListedUsers){
+            Assert.assertEquals(element.getText(), "3 larrypt Brigade Swarroon");
+        }
 
         return this;
     }

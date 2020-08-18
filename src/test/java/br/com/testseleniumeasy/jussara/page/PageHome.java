@@ -51,6 +51,12 @@ public class PageHome extends PageBase<PageHome> {
 	@FindBy(linkText = "Table Data Search")
 	private WebElement tableDataSearch;
 
+	@FindBy(linkText="Date pickers")
+	private WebElement datePickers;
+
+	@FindBy(linkText = "Bootstrap Date Picker")
+	private WebElement bootstrapDatePicker;
+
 
 	public void recusarAlertLearnSelenium(){
 		if(isVisibility(alertLearnSelenium)){
@@ -103,6 +109,13 @@ public class PageHome extends PageBase<PageHome> {
 		click(table);
 		aguardarElementoVisivel(tableDataSearch);
 		click(tableDataSearch);
+	}
+
+	public void acessarBootstrapDatePicker(){
+		recusarAlertLearnSelenium();
+		click(datePickers);
+		aguardarElementoVisivel(bootstrapDatePicker);
+		click(bootstrapDatePicker);
 	}
 	
 }

@@ -15,7 +15,16 @@ public class TestTableDataSearch extends BaseTest {
     PageHome homeSeleniumEasy = new PageHome();
 
     @Test
-    public void filterTaskSucessTest() throws InterruptedException {
+    public void tableFilterTaskSucessTest() throws InterruptedException {
+        homeSeleniumEasy.acessarTableDataSearch();
+        new PageTableDataSearch()
+                .filterTask()
+                .assertTableTask();
+
+    }
+
+    @Test
+    public void tableFilterListedUsersSucessTest() throws InterruptedException {
         homeSeleniumEasy.acessarTableDataSearch();
         new PageTableDataSearch()
                 .clickButtonFilter()
