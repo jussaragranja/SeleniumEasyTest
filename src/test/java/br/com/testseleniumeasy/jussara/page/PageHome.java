@@ -45,6 +45,12 @@ public class PageHome extends PageBase<PageHome> {
 	@FindBy(id="btn_basic_example")
 	private WebElement botaoStart;
 
+	@FindBy(linkText="Table")
+	private WebElement table;
+
+	@FindBy(linkText = "Table Data Search")
+	private WebElement tableDataSearch;
+
 
 	public void recusarAlertLearnSelenium(){
 		if(isVisibility(alertLearnSelenium)){
@@ -74,6 +80,29 @@ public class PageHome extends PageBase<PageHome> {
 		aguardarElementoVisivel(radioButtonsDemo);
 		click(radioButtonsDemo);
 		Log.info("Acessando página RadioButtonsDemo");
+	}
+
+	public void acessarSelectDropdownList(){
+		recusarAlertLearnSelenium();
+		click(inputForms);
+		aguardarElementoVisivel(selectDropdownList);
+		click(selectDropdownList);
+		Log.info("Acessando página SelectDropdown List");
+	}
+
+	public void acessarAjaxFormSubmit(){
+		recusarAlertLearnSelenium();
+		click(inputForms);
+		aguardarElementoVisivel(ajaxFormSubmit);
+		click(ajaxFormSubmit);
+		Log.info("Acessando página Ajax Form Submit");
+	}
+
+	public void acessarTableDataSearch(){
+		recusarAlertLearnSelenium();
+		click(table);
+		aguardarElementoVisivel(tableDataSearch);
+		click(tableDataSearch);
 	}
 	
 }

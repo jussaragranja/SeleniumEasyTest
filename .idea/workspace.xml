@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d73d469-c913-4837-8bb6-f1b7c68a45f2" name="Default Changelist" comment="" />
+    <list default="true" id="3d73d469-c913-4837-8bb6-f1b7c68a45f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/table/PageTableDataSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/test/TestTableDataSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/core/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/core/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/PageHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/PageHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageAjaxFormSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageAjaxFormSubmit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageInputFormSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageInputFormSubmit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageJQuerySelectDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageJQuerySelectDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageRadioButtonsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageRadioButtonsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageSelectDropdownList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageSelectDropdownList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/test/TestInputForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/test/TestInputForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/BasicPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/core/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/core/PageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/PageHome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageAjaxFormSubmit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageCheckboxDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageInputFormSubmit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageJQuerySelectDropdown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageRadioButtonsDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageSelectDropdownList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/page/inputforms/PageSimpleFormDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/test/TestInputForms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Browser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Conversions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/LoggerUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Property.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/simpleProjectSelenium/util/Utils.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +63,13 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +100,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,94 +120,92 @@
       <recent name="$PROJECT_DIR$/src/test/java/br/com/simpleProjectSelenium/util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestInputForms.clickGroupRadioButtonsDemoMaleTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestTableDataSearch.filterTaskSucessTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInputForms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumEasyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.simpleProjectSelenium.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.simpleProjectSelenium.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.simpleProjectSelenium.test.TestInputForms" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInputForms.clickGroupRadioButtonsDemoMaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInputForms (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumEasyTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.simpleProjectSelenium.test.*" />
+          <option name="PATTERN" value="br.com.testseleniumeasy.jussara.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.simpleProjectSelenium.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.simpleProjectSelenium.test.TestInputForms" />
-      <option name="METHOD_NAME" value="clickGroupRadioButtonsDemoMaleTest" />
+      <option name="PACKAGE_NAME" value="br.com.testseleniumeasy.jussara.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.testseleniumeasy.jussara.test.TestInputForms" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestInputForms.inputNameAndCommentSucessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumEasyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.testseleniumeasy.jussara.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.testseleniumeasy.jussara.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.testseleniumeasy.jussara.test.TestInputForms" />
+      <option name="METHOD_NAME" value="inputNameAndCommentSucessTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInputForms.clickGroupRadioButtonsDemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInputForms.selecMultitListDemoSucessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumEasyTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.simpleProjectSelenium.test.*" />
+          <option name="PATTERN" value="br.com.testseleniumeasy.jussara.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.simpleProjectSelenium.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.simpleProjectSelenium.test.TestInputForms" />
-      <option name="METHOD_NAME" value="clickGroupRadioButtonsDemoTest" />
+      <option name="PACKAGE_NAME" value="br.com.testseleniumeasy.jussara.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.testseleniumeasy.jussara.test.TestInputForms" />
+      <option name="METHOD_NAME" value="selecMultitListDemoSucessTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInputForms.clickRadioButtonDemoErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestInputForms.selectListDemoSucessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumEasyTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.simpleProjectSelenium.test.*" />
+          <option name="PATTERN" value="br.com.testseleniumeasy.jussara.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.simpleProjectSelenium.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.simpleProjectSelenium.test.TestInputForms" />
-      <option name="METHOD_NAME" value="clickRadioButtonDemoErrorTest" />
+      <option name="PACKAGE_NAME" value="br.com.testseleniumeasy.jussara.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.testseleniumeasy.jussara.test.TestInputForms" />
+      <option name="METHOD_NAME" value="selectListDemoSucessTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInputForms.clickRadioButtonDemoGenderMaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTableDataSearch.filterTaskSucessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumEasyTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.simpleProjectSelenium.test.*" />
+          <option name="PATTERN" value="br.com.testseleniumeasy.jussara.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.simpleProjectSelenium.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.simpleProjectSelenium.test.TestInputForms" />
-      <option name="METHOD_NAME" value="clickRadioButtonDemoGenderMaleTest" />
+      <option name="PACKAGE_NAME" value="br.com.testseleniumeasy.jussara.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.testseleniumeasy.jussara.test.TestTableDataSearch" />
+      <option name="METHOD_NAME" value="filterTaskSucessTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestInputForms.clickGroupRadioButtonsDemoMaleTest" />
-        <item itemvalue="JUnit.TestInputForms.clickGroupRadioButtonsDemoTest" />
-        <item itemvalue="JUnit.TestInputForms.clickRadioButtonDemoErrorTest" />
-        <item itemvalue="JUnit.TestInputForms" />
-        <item itemvalue="JUnit.TestInputForms.clickRadioButtonDemoGenderMaleTest" />
+        <item itemvalue="JUnit.TestTableDataSearch.filterTaskSucessTest" />
+        <item itemvalue="JUnit.TestInputForms.inputNameAndCommentSucessTest" />
+        <item itemvalue="JUnit.TestInputForms (1)" />
+        <item itemvalue="JUnit.TestInputForms.selecMultitListDemoSucessTest" />
+        <item itemvalue="JUnit.TestInputForms.selectListDemoSucessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +247,8 @@
       <workItem from="1596762505736" duration="13342000" />
       <workItem from="1596843553447" duration="3126000" />
       <workItem from="1596897293909" duration="1044000" />
-      <workItem from="1596917796930" duration="3477000" />
+      <workItem from="1596917796930" duration="6265000" />
+      <workItem from="1597682613496" duration="29497000" />
     </task>
     <servers />
   </component>
@@ -217,92 +256,95 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="140" y="127" width="1680" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596767217525">
-      <screen x="40" y="27" width="1880" height="1053" />
+    <state x="2022" y="103" width="1716" height="875" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597698493383">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2022" y="103" width="1716" height="875" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597698493383" />
     <state x="140" y="127" width="1680" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/40.27.1880.1053@40.27.1880.1053" timestamp="1596767217525" />
     <state x="567" y="27" width="815" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596767585440">
       <screen x="40" y="27" width="1880" height="1053" />
     </state>
     <state x="567" y="27" width="815" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596674001847" />
     <state x="567" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/40.27.1880.1053@40.27.1880.1053" timestamp="1596767585440" />
-    <state x="2887" y="518" key="#xdebugger.evaluate" timestamp="1596920002256">
+    <state x="2887" y="518" key="#xdebugger.evaluate" timestamp="1597723232688">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2887" y="518" key="#xdebugger.evaluate/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920002256" />
-    <state x="987" y="532" key="#xdebugger.evaluate/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596587870094" />
+    <state x="2887" y="518" key="#xdebugger.evaluate/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723232688" />
+    <state x="987" y="532" key="#xdebugger.evaluate/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943077154" />
     <state x="987" y="532" key="#xdebugger.evaluate/40.27.1880.1053@40.27.1880.1053" timestamp="1596801888544" />
-    <state x="763" y="311" width="374" height="491" key="FileChooserDialogImpl" timestamp="1596846141053">
-      <screen x="40" y="27" width="1880" height="1053" />
+    <state x="2658" y="291" width="424" height="491" key="FileChooserDialogImpl" timestamp="1597687603831">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2658" y="291" width="424" height="491" key="FileChooserDialogImpl/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597687603831" />
     <state x="990" y="311" width="374" height="491" key="FileChooserDialogImpl/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596674435149" />
     <state x="763" y="311" width="424" height="491" key="FileChooserDialogImpl/40.27.1880.1053@40.27.1880.1053" timestamp="1596846141053" />
     <state x="1960" y="311" key="FileChooserDialogImpl/40.27.3800.1053@40.27.3800.1053" timestamp="1596246145813" />
-    <state width="1834" height="301" key="GridCell.Tab.0.bottom" timestamp="1596920116213">
+    <state width="1834" height="326" key="GridCell.Tab.0.bottom" timestamp="1597723158217">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="301" key="GridCell.Tab.0.bottom/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920116213" />
-    <state width="1834" height="329" key="GridCell.Tab.0.bottom/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.0.bottom/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723158217" />
+    <state width="1834" height="317" key="GridCell.Tab.0.bottom/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701971" />
     <state width="894" height="292" key="GridCell.Tab.0.bottom/40.27.1880.1053@40.27.1880.1053" timestamp="1596807494940" />
     <state width="1834" height="275" key="GridCell.Tab.0.bottom/40.27.3800.1053@40.27.3800.1053" timestamp="1596246147661" />
-    <state width="1834" height="301" key="GridCell.Tab.0.center" timestamp="1596920116213">
+    <state width="1834" height="326" key="GridCell.Tab.0.center" timestamp="1597723158217">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="301" key="GridCell.Tab.0.center/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920116213" />
-    <state width="1834" height="329" key="GridCell.Tab.0.center/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.0.center/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723158217" />
+    <state width="1834" height="317" key="GridCell.Tab.0.center/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701968" />
     <state width="894" height="292" key="GridCell.Tab.0.center/40.27.1880.1053@40.27.1880.1053" timestamp="1596807494940" />
     <state width="1834" height="275" key="GridCell.Tab.0.center/40.27.3800.1053@40.27.3800.1053" timestamp="1596246147660" />
-    <state width="1834" height="301" key="GridCell.Tab.0.left" timestamp="1596920116213">
+    <state width="1834" height="326" key="GridCell.Tab.0.left" timestamp="1597723158216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="301" key="GridCell.Tab.0.left/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920116213" />
-    <state width="1834" height="329" key="GridCell.Tab.0.left/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.0.left/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723158216" />
+    <state width="1834" height="317" key="GridCell.Tab.0.left/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701968" />
     <state width="894" height="292" key="GridCell.Tab.0.left/40.27.1880.1053@40.27.1880.1053" timestamp="1596807494940" />
     <state width="1834" height="275" key="GridCell.Tab.0.left/40.27.3800.1053@40.27.3800.1053" timestamp="1596246147660" />
-    <state width="1834" height="301" key="GridCell.Tab.0.right" timestamp="1596920116213">
+    <state width="1834" height="326" key="GridCell.Tab.0.right" timestamp="1597723158217">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="301" key="GridCell.Tab.0.right/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920116213" />
-    <state width="1834" height="329" key="GridCell.Tab.0.right/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.0.right/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723158217" />
+    <state width="1834" height="317" key="GridCell.Tab.0.right/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701971" />
     <state width="894" height="292" key="GridCell.Tab.0.right/40.27.1880.1053@40.27.1880.1053" timestamp="1596807494940" />
     <state width="1834" height="275" key="GridCell.Tab.0.right/40.27.3800.1053@40.27.3800.1053" timestamp="1596246147661" />
-    <state width="1834" height="328" key="GridCell.Tab.1.bottom" timestamp="1596920013988">
+    <state width="1834" height="326" key="GridCell.Tab.1.bottom" timestamp="1597723175446">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="328" key="GridCell.Tab.1.bottom/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920013988" />
-    <state width="1834" height="329" key="GridCell.Tab.1.bottom/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.1.bottom/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723175446" />
+    <state width="1834" height="317" key="GridCell.Tab.1.bottom/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701972" />
     <state width="894" height="318" key="GridCell.Tab.1.bottom/40.27.1880.1053@40.27.1880.1053" timestamp="1596804902505" />
-    <state width="1834" height="328" key="GridCell.Tab.1.center" timestamp="1596920013988">
+    <state width="1834" height="326" key="GridCell.Tab.1.center" timestamp="1597723175446">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="328" key="GridCell.Tab.1.center/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920013988" />
-    <state width="1834" height="329" key="GridCell.Tab.1.center/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.1.center/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723175446" />
+    <state width="1834" height="317" key="GridCell.Tab.1.center/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701972" />
     <state width="894" height="318" key="GridCell.Tab.1.center/40.27.1880.1053@40.27.1880.1053" timestamp="1596804902504" />
-    <state width="1834" height="328" key="GridCell.Tab.1.left" timestamp="1596920013988">
+    <state width="1834" height="326" key="GridCell.Tab.1.left" timestamp="1597723175445">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="328" key="GridCell.Tab.1.left/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920013988" />
-    <state width="1834" height="329" key="GridCell.Tab.1.left/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.1.left/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723175445" />
+    <state width="1834" height="317" key="GridCell.Tab.1.left/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701971" />
     <state width="894" height="318" key="GridCell.Tab.1.left/40.27.1880.1053@40.27.1880.1053" timestamp="1596804902504" />
-    <state width="1834" height="328" key="GridCell.Tab.1.right" timestamp="1596920013988">
+    <state width="1834" height="326" key="GridCell.Tab.1.right" timestamp="1597723175446">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1834" height="328" key="GridCell.Tab.1.right/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596920013988" />
-    <state width="1834" height="329" key="GridCell.Tab.1.right/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596759906926" />
+    <state width="1834" height="326" key="GridCell.Tab.1.right/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597723175446" />
+    <state width="1834" height="317" key="GridCell.Tab.1.right/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596943701972" />
     <state width="894" height="318" key="GridCell.Tab.1.right/40.27.1880.1053@40.27.1880.1053" timestamp="1596804902505" />
-    <state x="723" y="228" width="1022" height="737" key="SettingsEditor" timestamp="1596804764083">
-      <screen x="40" y="27" width="1880" height="1053" />
+    <state x="2618" y="206" width="1022" height="737" key="SettingsEditor" timestamp="1597690682112">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2618" y="206" width="1022" height="737" key="SettingsEditor/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597690682112" />
     <state x="463" y="131" width="1024" height="852" key="SettingsEditor/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596505487040" />
     <state x="723" y="228" width="1022" height="737" key="SettingsEditor/40.27.1880.1053@40.27.1880.1053" timestamp="1596804764083" />
     <state width="940" height="540" key="XDebugger.FullValuePopup" timestamp="1596919977103">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="940" height="540" key="XDebugger.FullValuePopup/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596919977103" />
-    <state x="2563" y="272" width="1066" height="661" key="find.popup" timestamp="1596923843015">
+    <state x="2563" y="272" width="1066" height="661" key="find.popup" timestamp="1597687569630">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2563" y="272" width="1066" height="661" key="find.popup/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596923843015" />
+    <state x="2563" y="272" width="1066" height="661" key="find.popup/40.27.1880.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597687569630" />
     <state x="670" y="292" width="1043" height="644" key="find.popup/40.27.1880.1053/1920.0.1920.1080@40.27.1880.1053" timestamp="1596674999512" />
     <state x="670" y="292" width="1044" height="645" key="find.popup/40.27.1880.1053@40.27.1880.1053" timestamp="1596764777396" />
     <state x="670" y="300" width="610" height="514" key="refactoring.ChangeSignatureDialog" timestamp="1596672306306">
@@ -318,9 +360,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/inputforms/PageRadioButtonsDemo.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/test/TestInputForms.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/table/PageTableDataSearch.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/testseleniumeasy/jussara/page/table/PageTableDataSearch.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -328,5 +380,10 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SeleniumEasyTest$TestTableDataSearch_filterTaskSucessTest.ic" NAME="TestTableDataSearch.filterTaskSucessTest Coverage Results" MODIFIED="1597723093015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>br.com.testseleniumeasy.jussara.test.*</FILTER>
+    </SUITE>
   </component>
 </project>

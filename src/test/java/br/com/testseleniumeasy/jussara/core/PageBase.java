@@ -7,7 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import static org.junit.Assert.fail;
@@ -66,6 +68,7 @@ public abstract class PageBase<T> {
 			fail("Erro ao selecionar no elemento: ["+element.getTagName()+ "] com o o valor: "+textVisible);
 		}
 	}
+
 	public void selectElementByVisibleValue(WebElement element, String valueVisibel){
 		try {
 			new Select(element).selectByValue(valueVisibel);
@@ -73,6 +76,16 @@ public abstract class PageBase<T> {
 			fail("Erro ao selecionar no elemento: ["+element.getTagName()+ "] com o o valor: "+valueVisibel);
 		}
 	}
+
+	public WebElement selectRandonElement(WebElement elemento) {
+
+		Select comboBox = new Select(elemento);
+		int randomIndex = new Random().nextInt(comboBox.getOptions().size());
+		comboBox.selectByIndex(randomIndex);
+
+		return elemento;
+	}
+
 	public void acceptAlert(){
 		try {
 	        Alert alert = this.driver.switchTo().alert();
@@ -212,7 +225,36 @@ public abstract class PageBase<T> {
 			fail("Erro ao limpar campo em tela. "+element);
 		}
 	}
+
 	public String getTitle(){
 		return this.driver.getTitle();
+	}
+
+	public List<List<WebElement>> getTable(WebElement table) {
+		aguardarElementoVisivel(table);
+
+		List<WebElement> tr = table.findElements(By.cssSelector("tr"));
+		List<List<WebElement>> tabela = new ArrayList<List<WebElement>>();
+
+		tr.forEach(linhas -> {
+			List<WebElement> celulas = linhas.findElements(By.cssSelector("td"));
+			List<WebElement> linha = new ArrayList<WebElement>();
+
+			celulas.forEach(celula -> {
+				linha.add(celula);
+			});
+
+			tabela.add(linha);
+		});
+
+		return tabela;
+	}
+
+	public List<WebElement> getLinhaTable(WebElement table){
+
+		List<WebElement> tr = table.findElements(By.cssSelector("tr"));
+		tr = table.findElements(By.cssSelector("tr"));
+
+		return tr;
 	}
 }

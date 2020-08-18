@@ -79,17 +79,19 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
         return this;
     }
 
-    public PageRadioButtonsDemo clickSexMaleGroupRadioButtons(){
+    public PageRadioButtonsDemo clickSexMaleGroupRadioButtons() throws InterruptedException {
 
         aguardarElementoVisivel(radioButtonGroupMale);
+        Thread.sleep(500);
         click(radioButtonGroupMale);
 
         return this;
     }
 
-    public PageRadioButtonsDemo clickSexFemaleGroupRadioButtons(){
+    public PageRadioButtonsDemo clickSexFemaleGroupRadioButtons() throws InterruptedException {
 
         aguardarElementoVisivel(radioButtonGroupFemale);
+        Thread.sleep(500);
         click(radioButtonGroupFemale);
 
         return this;
@@ -107,6 +109,7 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
         click(buttonGetValuesGroup);
         aguardarElementoVisivel(messageValuesGroupRadioButtons);
         Assert.assertEquals("Sex : "+sex+"\nAge group: "+age, messageValuesGroupRadioButtons.getText());
+        Log.info("Validação Concluída com sucesso");
 
         return this;
     }

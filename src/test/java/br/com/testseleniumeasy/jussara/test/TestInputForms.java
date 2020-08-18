@@ -2,15 +2,13 @@ package br.com.testseleniumeasy.jussara.test;
 
 import br.com.testseleniumeasy.jussara.core.BaseTest;
 import br.com.testseleniumeasy.jussara.page.PageHome;
-import br.com.testseleniumeasy.jussara.page.inputforms.PageCheckboxDemo;
-import br.com.testseleniumeasy.jussara.page.inputforms.PageRadioButtonsDemo;
-import br.com.testseleniumeasy.jussara.page.inputforms.PageSimpleFormDemo;
+import br.com.testseleniumeasy.jussara.page.inputforms.*;
 import br.com.testseleniumeasy.jussara.util.Constants;
 import org.junit.Test;
 
 /**
  * @author jussaragranja
- * Testing the page Simple Form Demo
+ * Testing the tab pages Input Forms
  */
 
 public class TestInputForms extends BaseTest {
@@ -124,11 +122,43 @@ public class TestInputForms extends BaseTest {
 		String age = "5 - 15";
 		homeSeleniumEasy.acessarRadioButtonsDemo();
 		new PageRadioButtonsDemo()
-				.clickSexFemaleGroupRadioButtons()
+				.clickSexMaleGroupRadioButtons()
 				.clickAgeGroupRadioButtons(age)
 				.assertGroupRadioButtons(sex, age);
 	}
 
+	//Test Page Select Dropdown List
+
+	@Test
+	public void selectListDemoSucessTest(){
+		homeSeleniumEasy.acessarSelectDropdownList();
+		new PageSelectDropdownList()
+				.selectADayListDemo(Constants.MONDAY)
+				.assertDaySelected(Constants.MONDAY);
+	}
+
+	@Test
+	public void selecMultitListDemoSucessTest(){
+		homeSeleniumEasy.acessarSelectDropdownList();
+		new PageSelectDropdownList()
+				.selectMultiListDemo("New Jersey")
+				.clickButtonFirstSelected()
+				.assertSelectMultiListDemo("New Jersey");
+
+	}
+
+	//Test Page Ajax Form Submit
+
+	@Test
+	public void inputNameAndCommentSucessTest() throws InterruptedException {
+		homeSeleniumEasy.acessarAjaxFormSubmit();
+		new PageAjaxFormSubmit()
+				.inputNameAndComment()
+				.clickButtonSubmit()
+				.assertMessageSucessful()
+				.validateHiddenButton();
+
+	}
 
 
 }
