@@ -1,6 +1,7 @@
 package br.com.testseleniumeasy.jussara.core;
 
 import br.com.testseleniumeasy.jussara.util.Browser;
+import br.com.testseleniumeasy.jussara.util.Log;
 import br.com.testseleniumeasy.jussara.util.Property;
 import org.junit.After;
 import org.junit.Before;
@@ -56,7 +57,7 @@ public class BaseTest {
 					driver.manage().window().maximize();
 				}
 			} catch (Exception e){
-				System.out.println(e.getMessage());
+				Log.info(e.getMessage());
 			}
 		}
 		return driver;

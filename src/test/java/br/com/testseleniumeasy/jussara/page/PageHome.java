@@ -15,8 +15,8 @@ public class PageHome extends PageBase<PageHome> {
 	@FindBy(id = "image-darkener")
 	private WebElement alertLearnSelenium;
 
-	@FindBy(xpath = "//*[@id=\"at-cv-lightbox-button-holder\"]/a[2]")
-	private WebElement botaoNoThanks;
+	@FindBy(css = "#at-cv-lightbox-button-holder > a.at-cv-button.at-cv-lightbox-yesno.at-cm-no-button")
+	private WebElement buttonNoThanks;
 
 	@FindBy(linkText="Input Forms")
 	private WebElement inputForms;
@@ -58,14 +58,14 @@ public class PageHome extends PageBase<PageHome> {
 	private WebElement bootstrapDatePicker;
 
 
-	public void recusarAlertLearnSelenium(){
+	public void refuseAlertLearnSelenium(){
 		if(isVisibility(alertLearnSelenium)){
-			botaoNoThanks.click();
+			click(buttonNoThanks);
 		}
 	}
 
 	public void acessarSimpleFormDemo(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(inputForms);
 		aguardarElementoVisivel(simpleFormDemo);
 		click(simpleFormDemo);
@@ -73,7 +73,7 @@ public class PageHome extends PageBase<PageHome> {
 	}
 
 	public void acessarCheckBoxDemo(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(inputForms);
 		aguardarElementoVisivel(checkBoxDemo);
 		click(checkBoxDemo);
@@ -81,7 +81,7 @@ public class PageHome extends PageBase<PageHome> {
 	}
 
 	public void acessarRadioButtonsDemo(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(inputForms);
 		aguardarElementoVisivel(radioButtonsDemo);
 		click(radioButtonsDemo);
@@ -89,7 +89,7 @@ public class PageHome extends PageBase<PageHome> {
 	}
 
 	public void acessarSelectDropdownList(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(inputForms);
 		aguardarElementoVisivel(selectDropdownList);
 		click(selectDropdownList);
@@ -97,7 +97,7 @@ public class PageHome extends PageBase<PageHome> {
 	}
 
 	public void acessarAjaxFormSubmit(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(inputForms);
 		aguardarElementoVisivel(ajaxFormSubmit);
 		click(ajaxFormSubmit);
@@ -105,14 +105,14 @@ public class PageHome extends PageBase<PageHome> {
 	}
 
 	public void acessarTableDataSearch(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(table);
 		aguardarElementoVisivel(tableDataSearch);
 		click(tableDataSearch);
 	}
 
 	public void acessarBootstrapDatePicker(){
-		recusarAlertLearnSelenium();
+		refuseAlertLearnSelenium();
 		click(datePickers);
 		aguardarElementoVisivel(bootstrapDatePicker);
 		click(bootstrapDatePicker);

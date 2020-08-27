@@ -22,9 +22,8 @@ import static org.junit.Assert.fail;
 
 public abstract class PageBase<T> {
 
-	private static final int LOAD_TIMEOUT = 30;
+	private static final int LOAD_TIMEOUT = 10;
 	private String windowHandleJanelaInicial;
-
 	public WebDriver driver;
 
 	public PageBase(){
@@ -52,7 +51,7 @@ public abstract class PageBase<T> {
 	
 	public String getTextElement(WebElement element){
 		if(!isVisibility(element)){
-			fail("Erro ao buscar texto em tela. Elemento: ["+element+"] Favor verificar evidencia.");
+			fail("Erro ao buscar texto em tela. Elemento: ["+element+"]");
 		}
 		return element.getText();
 	}
@@ -146,9 +145,9 @@ public abstract class PageBase<T> {
 		}
 	}
 
-	public boolean isVisibility(WebElement elemento){
+	public boolean isVisibility(WebElement element){
 		try {
-			return elemento.isDisplayed();	
+			return element.isDisplayed();
 		} catch (NoSuchElementException e){
 			return false;
 		}

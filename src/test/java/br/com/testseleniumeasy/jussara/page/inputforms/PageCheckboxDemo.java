@@ -33,22 +33,22 @@ public class PageCheckboxDemo extends PageBase<PageCheckboxDemo> {
     @FindBy(id = "check1")
     private WebElement buttonCheckUncheckAll;
 
-    public PageCheckboxDemo clickSingleCheckBoxDemo(){
-        aguardarElementoVisivel(inputCheckBoxSingle);
+    public PageCheckboxDemo clickSingleCheckBoxDemo() throws InterruptedException {
+        Thread.sleep(500);
         click(inputCheckBoxSingle);
 
         return this;
     }
 
-    public PageCheckboxDemo assertClickCheckBoxSingle(){
-        aguardarElementoVisivel(messageCheckedSingle);
+    public PageCheckboxDemo assertClickCheckBoxSingle() throws InterruptedException {
+        Thread.sleep(500);
         Assert.assertEquals("Success - Check box is checked", messageCheckedSingle.getText());
 
         return this;
     }
 
-    public PageCheckboxDemo clickCheckUncheckAll(){
-        aguardarElementoVisivel(buttonCheckUncheckAll);
+    public PageCheckboxDemo clickCheckUncheckAll() throws InterruptedException {
+        Thread.sleep(500);
         click(buttonCheckUncheckAll);
 
         return this;
@@ -60,7 +60,8 @@ public class PageCheckboxDemo extends PageBase<PageCheckboxDemo> {
         return this;
     }
 
-    public PageCheckboxDemo assertClickCheckAll(){
+    public PageCheckboxDemo assertClickCheckAll() throws InterruptedException {
+        Thread.sleep(500);
         Assert.assertEquals("Uncheck All", buttonCheckUncheckAll.getAttribute("value"));
 
         return this;

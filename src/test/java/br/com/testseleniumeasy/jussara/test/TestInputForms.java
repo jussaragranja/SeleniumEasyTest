@@ -53,25 +53,25 @@ public class TestInputForms extends BaseTest {
 	//Test Page CheckBoxDemo
 
 	@Test
-	public void singleCheckboxDemoSucessTest(){
+	public void singleCheckboxDemoSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
 		new PageCheckboxDemo().clickSingleCheckBoxDemo().assertClickCheckBoxSingle();
 	}
 
 	@Test
-	public void multipleCheckboxDemoCheckAllSucessTest(){
+	public void multipleCheckboxDemoCheckAllSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
 		new PageCheckboxDemo().clickCheckUncheckAll().assertClickCheckAll();
 	}
 
 	@Test
-	public void multipleCheckboxDemoUncheckAllSucessTest(){
+	public void multipleCheckboxDemoUncheckAllSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
 		new PageCheckboxDemo().clickCheckUncheckAll().clickCheckUncheckAll().assertClickUncheckAll();
 	}
 
 	@Test
-	public void multipleCheckboxDemoUncheckOneSucessTest(){
+	public void multipleCheckboxDemoUncheckOneSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
 		new PageCheckboxDemo().clickCheckUncheckAll().assertClickCheckAll().clickOption1().assertClickUncheckAll();
 	}
@@ -138,7 +138,7 @@ public class TestInputForms extends BaseTest {
 	}
 
 	@Test
-	public void selecMultitListDemoSucessTest(){
+	public void selecMultitListDemoSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarSelectDropdownList();
 		new PageSelectDropdownList()
 				.selectMultiListDemo("New Jersey")

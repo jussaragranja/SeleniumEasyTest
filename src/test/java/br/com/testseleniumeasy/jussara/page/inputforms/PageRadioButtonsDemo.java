@@ -58,7 +58,8 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
         return this;
     }
 
-    public PageRadioButtonsDemo clickGetCheckedValue(){
+    public PageRadioButtonsDemo clickGetCheckedValue() throws InterruptedException {
+        Thread.sleep(500);
         aguardarElementoVisivel(buttonGetCheckedValue);
         click(buttonGetCheckedValue);
         Log.info("Click Button Get Checked Value");
@@ -66,13 +67,15 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
     }
 
     public PageRadioButtonsDemo assertClickRadioButton(String sex) throws InterruptedException {
+        Thread.sleep(500);
         aguardarElementoVisivel(messageRadioButtonChecked);
         Assert.assertEquals("Radio button '"+sex+"' is checked", messageRadioButtonChecked.getText());
         Log.info("Validação Concluída com sucesso");
         return this;
     }
 
-    public PageRadioButtonsDemo assertClickGetCheckedValue(){
+    public PageRadioButtonsDemo assertClickGetCheckedValue() throws InterruptedException {
+        Thread.sleep(500);
         aguardarElementoVisivel(messageRadioButtonChecked);
         Assert.assertEquals("Radio button is Not checked", messageRadioButtonChecked.getText());
         Log.info("Validação Concluída com sucesso");

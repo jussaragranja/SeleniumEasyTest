@@ -60,13 +60,15 @@ public class PageSelectDropdownList extends PageBase<PageSelectDropdownList> {
         return this;
     }
 
-    public PageSelectDropdownList clickButtonFirstSelected(){
+    public PageSelectDropdownList clickButtonFirstSelected() throws InterruptedException {
+        Thread.sleep(500);
         click(buttonFirstSelected);
 
         return this;
     }
 
-    public PageSelectDropdownList assertSelectMultiListDemo(String state){
+    public PageSelectDropdownList assertSelectMultiListDemo(String state) throws InterruptedException {
+        Thread.sleep(500);
         Assert.assertEquals("First selected option is : "+state, messageOptionsSelected.getText());
         Log.info("Validação Concluída com sucesso");
 
