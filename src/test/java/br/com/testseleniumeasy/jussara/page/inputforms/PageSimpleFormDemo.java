@@ -1,6 +1,8 @@
 package br.com.testseleniumeasy.jussara.page.inputforms;
 
 import br.com.testseleniumeasy.jussara.core.PageBase;
+import br.com.testseleniumeasy.jussara.util.Conversions;
+import br.com.testseleniumeasy.jussara.util.Log;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,26 +24,6 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 	@FindBy(id = "display")
 	private WebElement labelTextoSuaMsg;
 
-
-	public PageSimpleFormDemo enterMessage(String texto){
-		writeInField(inputMsg, texto);
-
-		return this;
-	}
-
-	public PageSimpleFormDemo clickShowMessage(){
-		waitForElement(buttonShowMessage);
-		click(buttonShowMessage);
-
-		return this;
-	}
-
-	public void assertMessage(String texto) {
-		Assert.assertEquals(texto, labelTextoSuaMsg.getText());
-
-	}
-/*
-
 	@FindBy(id = "sum1")
 	private WebElement inputEnterNumberA;
 
@@ -57,8 +39,9 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 	private int sumNumberA;
 	private int sumNumberB;
 
+
 	public PageSimpleFormDemo enterMessage(String texto){
-		preencherCampo(inputMsg, texto);
+		writeInField(inputMsg, texto);
 		Log.info("Preechendo texto");
 
 		return this;
@@ -81,7 +64,7 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 
 	public PageSimpleFormDemo enterA(int numberA){
 		waitForElement(inputEnterNumberA);
-		preencherCampo(inputEnterNumberA, Conversions.intToString(numberA));
+		writeInField(inputEnterNumberA, Conversions.intToString(numberA));
 		Log.info("Escrevendo Número no campo Enter A");
 		sumNumberA = numberA;
 
@@ -90,7 +73,7 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 
 	public PageSimpleFormDemo enterB(int numberB){
 		waitForElement(inputEnterNumberB);
-		preencherCampo(inputEnterNumberB, Conversions.intToString(numberB));
+		writeInField(inputEnterNumberB, Conversions.intToString(numberB));
 		Log.info("Escrevendo Número no campo Enter B");
 		sumNumberB = numberB;
 
@@ -118,6 +101,6 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 		Log.info("Validação de soma concluída com sucesso!");
 		return this;
 	}
-*/
+
 
 }

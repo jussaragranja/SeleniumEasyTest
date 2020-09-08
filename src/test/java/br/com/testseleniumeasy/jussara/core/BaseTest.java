@@ -30,7 +30,6 @@ public class BaseTest {
 	public void before(){
 		driver = getDriver();
 		driver.navigate().to(Property.URL);
-
 	}
 
 	/*

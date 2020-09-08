@@ -25,8 +25,6 @@ public class TestInputForms extends BaseTest {
 				.assertMessage(Constants.MENSAGEM_TESTE);
 	}
 
-/*
-
 	@Test
 	public void simpleFormTwoInputFileldSucessTest(){
 		homeSeleniumEasy.accessSimpleFormDemo();
@@ -51,7 +49,7 @@ public class TestInputForms extends BaseTest {
 				.clickGetTotal()
 				.assertSumEnterAEnterBError();
 	}
-*/
+
 
 	//Test Page CheckBoxDemo
 
@@ -162,6 +160,5 @@ public class TestInputForms extends BaseTest {
 				.validateHiddenButton();
 
 	}
-
 
 }
