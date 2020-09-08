@@ -3,7 +3,6 @@ package br.com.testseleniumeasy.jussara.page.inputforms;
 
 import br.com.testseleniumeasy.jussara.core.PageBase;
 import br.com.testseleniumeasy.jussara.util.Constants;
-import br.com.testseleniumeasy.jussara.util.Log;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,17 +27,15 @@ public class PageAjaxFormSubmit extends PageBase<PageAjaxFormSubmit> {
     @FindBy(id = "submit-control")
     private WebElement messageSuccessful;
 
-    public PageAjaxFormSubmit inputNameAndComment() throws InterruptedException {
-        Thread.sleep(500);
-        preencherCampo(inputName, Constants.MENSAGEM_TESTE);
-        Thread.sleep(500);
-        preencherCampo(inputComment, Constants.MENSAGEM_TESTE);
+    public PageAjaxFormSubmit inputNameAndComment(){
+        writeInField(inputName, Constants.MENSAGEM_TESTE);
+        writeInField(inputComment, Constants.MENSAGEM_TESTE);
 
         return this;
     }
 
     public PageAjaxFormSubmit clickButtonSubmit() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         click(buttonSubmit);
 
         return this;
@@ -51,7 +48,8 @@ public class PageAjaxFormSubmit extends PageBase<PageAjaxFormSubmit> {
         return this;
     }
 
-    public PageAjaxFormSubmit validateHiddenButton(){
+    public PageAjaxFormSubmit validateHiddenButton() throws InterruptedException {
+        Thread.sleep(1000);
         Assert.assertTrue(!isVisibility(buttonSubmit));
 
         return this;

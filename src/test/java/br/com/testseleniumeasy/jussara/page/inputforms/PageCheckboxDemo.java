@@ -55,6 +55,7 @@ public class PageCheckboxDemo extends PageBase<PageCheckboxDemo> {
     }
 
     public PageCheckboxDemo clickOption1(){
+        aguardarElementoClicavel(inputCheckBoxMultipleOption1);
         click(inputCheckBoxMultipleOption1);
 
         return this;
@@ -67,7 +68,8 @@ public class PageCheckboxDemo extends PageBase<PageCheckboxDemo> {
         return this;
     }
 
-    public PageCheckboxDemo assertClickUncheckAll(){
+    public PageCheckboxDemo assertClickUncheckAll() throws InterruptedException {
+        Thread.sleep(500);
         Assert.assertEquals("Check All", buttonCheckUncheckAll.getAttribute("value"));
 
         return this;

@@ -22,7 +22,7 @@ import static org.junit.Assert.fail;
 
 public abstract class PageBase<T> {
 
-	private static final int LOAD_TIMEOUT = 10;
+	private static final int LOAD_TIMEOUT = 60;
 	private String windowHandleJanelaInicial;
 	public WebDriver driver;
 
@@ -31,7 +31,7 @@ public abstract class PageBase<T> {
 		PageFactory.initElements(BaseTest.getDriver(), this);
 	}
 
-	public void preencherCampo(WebElement element, String keysToSend){
+	public void writeInField(WebElement element, String keysToSend){
 		try {
 			element.clear();
 			element.sendKeys(keysToSend);
@@ -40,15 +40,7 @@ public abstract class PageBase<T> {
 			
 		}
 	}
-	public void click(WebElement element){
-		try {
-			aguardarElementoVisivel(element);
-			element.click();
-		} catch (Exception e) {
-			fail("Nao foi possivel encontrar o elemento para clicar: "+element +". Pagina: " +this.driver.getTitle()+"\n "+e.getMessage());
-		}
-	}
-	
+
 	public String getTextElement(WebElement element){
 		if(!isVisibility(element)){
 			fail("Erro ao buscar texto em tela. Elemento: ["+element+"]");
@@ -103,7 +95,8 @@ public abstract class PageBase<T> {
 		}
 		return alerta;
 	}
-	public void aguardarElementoVisivel(WebElement element){
+
+	public void waitForElement(WebElement element){
 		try {
 			WebDriverWait driverWait = new WebDriverWait(this.driver, LOAD_TIMEOUT);
 			driverWait.until(ExpectedConditions.visibilityOf(element));
@@ -111,6 +104,15 @@ public abstract class PageBase<T> {
 			fail("Tempo excedido para aguardar elemento: "+element);
 		}
 	}
+	public void click(WebElement element){
+		try {
+			waitForElement(element);
+			element.click();
+		} catch (Exception e) {
+			fail("Nao foi possivel encontrar o elemento para clicar: "+element +". Pagina: " +this.driver.getTitle()+"\n "+e.getMessage());
+		}
+	}
+
 	public void aguardarListElementoVisivel(List<WebElement> elements){
 		try {
 			WebDriverWait driverWait = new WebDriverWait(this.driver, LOAD_TIMEOUT);
@@ -179,7 +181,7 @@ public abstract class PageBase<T> {
 	}
 	
 	public boolean containsText(WebElement elemento, String texto){
-		aguardarElementoVisivel(elemento);
+		waitForElement(elemento);
 		return elemento.getText().contains(texto);
 	}
 	
@@ -230,7 +232,7 @@ public abstract class PageBase<T> {
 	}
 
 	public List<List<WebElement>> getTable(WebElement table) {
-		aguardarElementoVisivel(table);
+		waitForElement(table);
 
 		List<WebElement> tr = table.findElements(By.cssSelector("tr"));
 		List<List<WebElement>> tabela = new ArrayList<List<WebElement>>();

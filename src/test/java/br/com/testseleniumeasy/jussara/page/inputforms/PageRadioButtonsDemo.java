@@ -60,31 +60,27 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
 
     public PageRadioButtonsDemo clickGetCheckedValue() throws InterruptedException {
         Thread.sleep(500);
-        aguardarElementoVisivel(buttonGetCheckedValue);
+        waitForElement(buttonGetCheckedValue);
         click(buttonGetCheckedValue);
         Log.info("Click Button Get Checked Value");
         return this;
     }
 
     public PageRadioButtonsDemo assertClickRadioButton(String sex) throws InterruptedException {
-        Thread.sleep(500);
-        aguardarElementoVisivel(messageRadioButtonChecked);
+        waitForElement(messageRadioButtonChecked);
         Assert.assertEquals("Radio button '"+sex+"' is checked", messageRadioButtonChecked.getText());
         Log.info("Validação Concluída com sucesso");
         return this;
     }
 
-    public PageRadioButtonsDemo assertClickGetCheckedValue() throws InterruptedException {
-        Thread.sleep(500);
-        aguardarElementoVisivel(messageRadioButtonChecked);
+    public PageRadioButtonsDemo assertClickGetCheckedValue(){
+        waitForElement(messageRadioButtonChecked);
         Assert.assertEquals("Radio button is Not checked", messageRadioButtonChecked.getText());
         Log.info("Validação Concluída com sucesso");
         return this;
     }
 
     public PageRadioButtonsDemo clickSexMaleGroupRadioButtons() throws InterruptedException {
-
-        aguardarElementoVisivel(radioButtonGroupMale);
         Thread.sleep(500);
         click(radioButtonGroupMale);
 
@@ -92,8 +88,6 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
     }
 
     public PageRadioButtonsDemo clickSexFemaleGroupRadioButtons() throws InterruptedException {
-
-        aguardarElementoVisivel(radioButtonGroupFemale);
         Thread.sleep(500);
         click(radioButtonGroupFemale);
 
@@ -110,7 +104,7 @@ public class PageRadioButtonsDemo extends PageBase<PageRadioButtonsDemo> {
 
     public PageRadioButtonsDemo assertGroupRadioButtons(String sex, String age) throws InterruptedException {
         click(buttonGetValuesGroup);
-        aguardarElementoVisivel(messageValuesGroupRadioButtons);
+        waitForElement(messageValuesGroupRadioButtons);
         Assert.assertEquals("Sex : "+sex+"\nAge group: "+age, messageValuesGroupRadioButtons.getText());
         Log.info("Validação Concluída com sucesso");
 

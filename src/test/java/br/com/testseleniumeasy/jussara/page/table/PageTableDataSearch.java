@@ -26,7 +26,7 @@ public class PageTableDataSearch extends PageBase<PageTableDataSearch> {
 
     public PageTableDataSearch filterTask() throws InterruptedException {
         Thread.sleep(500);
-        preencherCampo(inputFilterTask, "bug");
+        writeInField(inputFilterTask, "bug");
 
         return this;
     }
@@ -50,7 +50,7 @@ public class PageTableDataSearch extends PageBase<PageTableDataSearch> {
 
     public PageTableDataSearch filterUserById() throws InterruptedException {
         Thread.sleep(1000);
-        preencherCampo(filterUserId, "3");
+        writeInField(filterUserId, "3");
 
         return this;
     }

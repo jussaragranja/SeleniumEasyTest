@@ -18,16 +18,18 @@ public class TestInputForms extends BaseTest {
 	//Test Page SimpleFormDemo
 
 	@Test
-	public void simpleFormSingleInputFileldSucessTest(){
-		homeSeleniumEasy.acessarSimpleFormDemo();
+	public void simpleFormSingleInputFieldSucessTest(){
+		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo().enterMessage(Constants.MENSAGEM_TESTE)
 				.clickShowMessage()
 				.assertMessage(Constants.MENSAGEM_TESTE);
 	}
 
+/*
+
 	@Test
 	public void simpleFormTwoInputFileldSucessTest(){
-		homeSeleniumEasy.acessarSimpleFormDemo();
+		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo()
 				.enterA(2)
 				.enterB(2)
@@ -37,18 +39,19 @@ public class TestInputForms extends BaseTest {
 
 	@Test
 	public void simpleFormSingleInputFileldErrorTest(){
-		homeSeleniumEasy.acessarSimpleFormDemo();
+		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo().clickShowMessage()
 				.assertMessage(Constants.MENSAGEM_VAZIA);
 	}
 
 	@Test
 	public void simpleFormTwoInputFileldErrorTest(){
-		homeSeleniumEasy.acessarSimpleFormDemo();
+		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo()
 				.clickGetTotal()
 				.assertSumEnterAEnterBError();
 	}
+*/
 
 	//Test Page CheckBoxDemo
 

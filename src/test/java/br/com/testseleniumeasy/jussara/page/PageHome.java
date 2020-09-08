@@ -64,10 +64,10 @@ public class PageHome extends PageBase<PageHome> {
 		}
 	}
 
-	public void acessarSimpleFormDemo(){
+	public void accessSimpleFormDemo(){
 		refuseAlertLearnSelenium();
 		click(inputForms);
-		aguardarElementoVisivel(simpleFormDemo);
+		waitForElement(simpleFormDemo);
 		click(simpleFormDemo);
 		Log.info("Acessando página SimpleFormDemo");
 	}
@@ -75,7 +75,7 @@ public class PageHome extends PageBase<PageHome> {
 	public void acessarCheckBoxDemo(){
 		refuseAlertLearnSelenium();
 		click(inputForms);
-		aguardarElementoVisivel(checkBoxDemo);
+		waitForElement(checkBoxDemo);
 		click(checkBoxDemo);
 		Log.info("Acessando página CheckBoxDemo");
 	}
@@ -83,7 +83,7 @@ public class PageHome extends PageBase<PageHome> {
 	public void acessarRadioButtonsDemo(){
 		refuseAlertLearnSelenium();
 		click(inputForms);
-		aguardarElementoVisivel(radioButtonsDemo);
+		waitForElement(radioButtonsDemo);
 		click(radioButtonsDemo);
 		Log.info("Acessando página RadioButtonsDemo");
 	}
@@ -91,7 +91,7 @@ public class PageHome extends PageBase<PageHome> {
 	public void acessarSelectDropdownList(){
 		refuseAlertLearnSelenium();
 		click(inputForms);
-		aguardarElementoVisivel(selectDropdownList);
+		waitForElement(selectDropdownList);
 		click(selectDropdownList);
 		Log.info("Acessando página SelectDropdown List");
 	}
@@ -99,7 +99,7 @@ public class PageHome extends PageBase<PageHome> {
 	public void acessarAjaxFormSubmit(){
 		refuseAlertLearnSelenium();
 		click(inputForms);
-		aguardarElementoVisivel(ajaxFormSubmit);
+		waitForElement(ajaxFormSubmit);
 		click(ajaxFormSubmit);
 		Log.info("Acessando página Ajax Form Submit");
 	}
@@ -107,14 +107,14 @@ public class PageHome extends PageBase<PageHome> {
 	public void acessarTableDataSearch(){
 		refuseAlertLearnSelenium();
 		click(table);
-		aguardarElementoVisivel(tableDataSearch);
+		waitForElement(tableDataSearch);
 		click(tableDataSearch);
 	}
 
 	public void acessarBootstrapDatePicker(){
 		refuseAlertLearnSelenium();
 		click(datePickers);
-		aguardarElementoVisivel(bootstrapDatePicker);
+		waitForElement(bootstrapDatePicker);
 		click(bootstrapDatePicker);
 	}
 	
