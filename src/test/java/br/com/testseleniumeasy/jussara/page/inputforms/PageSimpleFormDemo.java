@@ -18,7 +18,7 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 	@FindBy(id = "user-message")
 	private WebElement inputMsg;
 
-	@FindBy(css ="button[onclick='showInput();']")
+	@FindBy(css ="#get-input > button")
 	private WebElement buttonShowMessage;
 	
 	@FindBy(id = "display")
@@ -30,7 +30,7 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 	@FindBy(id = "sum2")
 	private WebElement inputEnterNumberB;
 
-	@FindBy(xpath ="//button[contains(text(),'Get Total')]")
+	@FindBy(css ="#gettotal > button")
 	private WebElement buttonGetTotal;
 
 	@FindBy(id = "displayvalue")
@@ -47,8 +47,8 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 		return this;
 	}
 
-	public PageSimpleFormDemo clickShowMessage(){
-		waitForElement(buttonShowMessage);
+	public PageSimpleFormDemo clickShowMessage() throws InterruptedException {
+		Thread.sleep(500);
 		click(buttonShowMessage);
 		Log.info("Click show message");
 
@@ -80,8 +80,8 @@ public class PageSimpleFormDemo extends PageBase<PageSimpleFormDemo> {
 		return this;
 	}
 
-	public PageSimpleFormDemo clickGetTotal(){
-		waitForElement(buttonGetTotal);
+	public PageSimpleFormDemo clickGetTotal() throws InterruptedException {
+		Thread.sleep(1000);
 		click(buttonGetTotal);
 		Log.info("Clicando no Botão de Soma");
 

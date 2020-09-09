@@ -30,47 +30,57 @@ public class PageCheckboxDemo extends PageBase<PageCheckboxDemo> {
     @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[4]/label/input")
     private WebElement inputCheckBoxMultipleOption4;
 
-    @FindBy(id = "check1")
-    private WebElement buttonCheckUncheckAll;
+    @FindBy(css = "input[value = 'Check All']")
+    private WebElement buttonCheckAll;
+
+    @FindBy(css = "input[value = 'Uncheck All']")
+    private WebElement buttonUncheckAll;
 
     public PageCheckboxDemo clickSingleCheckBoxDemo() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         click(inputCheckBoxSingle);
 
         return this;
     }
 
     public PageCheckboxDemo assertClickCheckBoxSingle() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         Assert.assertEquals("Success - Check box is checked", messageCheckedSingle.getText());
 
         return this;
     }
 
-    public PageCheckboxDemo clickCheckUncheckAll() throws InterruptedException {
-        Thread.sleep(500);
-        click(buttonCheckUncheckAll);
+    public PageCheckboxDemo clickButtonCheckAll() throws InterruptedException {
+        Thread.sleep(1000);
+        click(buttonCheckAll);
 
         return this;
     }
 
-    public PageCheckboxDemo clickOption1(){
-        aguardarElementoClicavel(inputCheckBoxMultipleOption1);
+    public PageCheckboxDemo clickButtonUncheckAll() throws InterruptedException {
+        Thread.sleep(1000);
+        click(buttonUncheckAll);
+
+        return this;
+    }
+
+    public PageCheckboxDemo clickOption1() throws InterruptedException {
+        Thread.sleep(1000);
         click(inputCheckBoxMultipleOption1);
 
         return this;
     }
 
     public PageCheckboxDemo assertClickCheckAll() throws InterruptedException {
-        Thread.sleep(500);
-        Assert.assertEquals("Uncheck All", buttonCheckUncheckAll.getAttribute("value"));
+        Thread.sleep(1000);
+        Assert.assertEquals("Uncheck All", buttonUncheckAll.getAttribute("value"));
 
         return this;
     }
 
     public PageCheckboxDemo assertClickUncheckAll() throws InterruptedException {
         Thread.sleep(500);
-        Assert.assertEquals("Check All", buttonCheckUncheckAll.getAttribute("value"));
+        Assert.assertEquals("Check All", buttonCheckAll.getAttribute("value"));
 
         return this;
     }

@@ -33,6 +33,7 @@ public abstract class PageBase<T> {
 
 	public void writeInField(WebElement element, String keysToSend){
 		try {
+			waitForElement(element);
 			element.clear();
 			element.sendKeys(keysToSend);
 		} catch (WebDriverException e) {

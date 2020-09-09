@@ -28,28 +28,31 @@ public class PageSelectDropdownList extends PageBase<PageSelectDropdownList> {
     @FindBy(id = "printMe")
     private WebElement buttonFirstSelected;
 
-    @FindBy(id = "printAll")
+    @FindBy(css = "button[value = 'Print First']")
     private WebElement buttonGetAllSelected;
 
     @FindBy(css = ".getall-selected")
     private WebElement messageOptionsSelected;
 
 
-    public PageSelectDropdownList selectADayListDemo(String day){
+    public PageSelectDropdownList selectADayListDemo(String day) throws InterruptedException {
+        Thread.sleep(1000);
         selectElementByVisibleText(selectDay, day);
 
         return this;
     }
 
-    public PageSelectDropdownList assertDaySelected(String day){
+    public PageSelectDropdownList assertDaySelected(String day) throws InterruptedException {
+        Thread.sleep(1000);
         Assert.assertEquals("Day selected :- "+day, messageSelectedValue.getText());
         Log.info("Validação Concluída com sucesso");
 
         return this;
     }
 
-    public PageSelectDropdownList selectMultiListDemo(String state){
-         selectElementByVisibleText(multiSelectListDemo, state);
+    public PageSelectDropdownList selectMultiListDemo(String state) throws InterruptedException {
+        Thread.sleep(1000);
+        selectElementByVisibleValue(multiSelectListDemo, state);
 
         return this;
     }
@@ -61,14 +64,14 @@ public class PageSelectDropdownList extends PageBase<PageSelectDropdownList> {
     }
 
     public PageSelectDropdownList clickButtonFirstSelected() throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         click(buttonFirstSelected);
 
         return this;
     }
 
     public PageSelectDropdownList assertSelectMultiListDemo(String state) throws InterruptedException {
-        Thread.sleep(500);
+        Thread.sleep(1000);
         Assert.assertEquals("First selected option is : "+state, messageOptionsSelected.getText());
         Log.info("Validação Concluída com sucesso");
 

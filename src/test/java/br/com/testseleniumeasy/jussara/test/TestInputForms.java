@@ -18,7 +18,7 @@ public class TestInputForms extends BaseTest {
 	//Test Page SimpleFormDemo
 
 	@Test
-	public void simpleFormSingleInputFieldSucessTest(){
+	public void simpleFormSingleInputFieldSucessTest() throws InterruptedException {
 		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo().enterMessage(Constants.MENSAGEM_TESTE)
 				.clickShowMessage()
@@ -26,7 +26,7 @@ public class TestInputForms extends BaseTest {
 	}
 
 	@Test
-	public void simpleFormTwoInputFileldSucessTest(){
+	public void simpleFormTwoInputFileldSucessTest() throws InterruptedException {
 		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo()
 				.enterA(2)
@@ -36,14 +36,14 @@ public class TestInputForms extends BaseTest {
 	}
 
 	@Test
-	public void simpleFormSingleInputFileldErrorTest(){
+	public void simpleFormSingleInputFileldErrorTest() throws InterruptedException {
 		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo().clickShowMessage()
 				.assertMessage(Constants.MENSAGEM_VAZIA);
 	}
 
 	@Test
-	public void simpleFormTwoInputFileldErrorTest(){
+	public void simpleFormTwoInputFileldErrorTest() throws InterruptedException {
 		homeSeleniumEasy.accessSimpleFormDemo();
 		new PageSimpleFormDemo()
 				.clickGetTotal()
@@ -56,25 +56,36 @@ public class TestInputForms extends BaseTest {
 	@Test
 	public void singleCheckboxDemoSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
-		new PageCheckboxDemo().clickSingleCheckBoxDemo().assertClickCheckBoxSingle();
+		new PageCheckboxDemo()
+				.clickSingleCheckBoxDemo()
+				.assertClickCheckBoxSingle();
 	}
 
 	@Test
 	public void multipleCheckboxDemoCheckAllSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
-		new PageCheckboxDemo().clickCheckUncheckAll().assertClickCheckAll();
+		new PageCheckboxDemo()
+				.clickButtonCheckAll()
+				.assertClickCheckAll();
 	}
 
 	@Test
 	public void multipleCheckboxDemoUncheckAllSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
-		new PageCheckboxDemo().clickCheckUncheckAll().clickCheckUncheckAll().assertClickUncheckAll();
+		new PageCheckboxDemo()
+				.clickButtonCheckAll()
+				.clickButtonUncheckAll()
+				.assertClickUncheckAll();
 	}
 
 	@Test
 	public void multipleCheckboxDemoUncheckOneSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarCheckBoxDemo();
-		new PageCheckboxDemo().clickCheckUncheckAll().assertClickCheckAll().clickOption1().assertClickUncheckAll();
+		new PageCheckboxDemo()
+				.clickButtonCheckAll()
+				.assertClickCheckAll()
+				.clickOption1()
+				.assertClickUncheckAll();
 	}
 
 	//Test Page RadioButtonsDemo
@@ -131,20 +142,20 @@ public class TestInputForms extends BaseTest {
 	//Test Page Select Dropdown List
 
 	@Test
-	public void selectListDemoSucessTest(){
+	public void selectListDemoSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarSelectDropdownList();
 		new PageSelectDropdownList()
-				.selectADayListDemo(Constants.MONDAY)
-				.assertDaySelected(Constants.MONDAY);
+				.selectADayListDemo(Constants.WEDNESDAY)
+				.assertDaySelected(Constants.WEDNESDAY);
 	}
 
 	@Test
 	public void selecMultitListDemoSucessTest() throws InterruptedException {
 		homeSeleniumEasy.acessarSelectDropdownList();
 		new PageSelectDropdownList()
-				.selectMultiListDemo("New Jersey")
+				.selectMultiListDemo("New York")
 				.clickButtonFirstSelected()
-				.assertSelectMultiListDemo("New Jersey");
+				.assertSelectMultiListDemo("New York");
 
 	}
 

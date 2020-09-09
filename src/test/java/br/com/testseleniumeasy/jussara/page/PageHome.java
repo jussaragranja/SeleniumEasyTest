@@ -64,7 +64,8 @@ public class PageHome extends PageBase<PageHome> {
 		}
 	}
 
-	public void accessSimpleFormDemo(){
+	public void accessSimpleFormDemo() throws InterruptedException {
+		Thread.sleep(10000);
 		refuseAlertLearnSelenium();
 		click(inputForms);
 		waitForElement(simpleFormDemo);
