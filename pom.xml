@@ -3,6 +3,8 @@
   <groupId>br.com.testseleniumeasy.jussara</groupId>
   <artifactId>br.com.testseleniumeasy.jussara</artifactId>
   <version>1.0.0</version>
+  <name>SeleniumEasyTest</name>
+
     <build>
         <plugins>
             <plugin>
@@ -15,7 +17,6 @@
             </plugin>
         </plugins>
     </build>
-    <name>SeleniumEasyTest</name>
 
 	<dependencies>
         <dependency>
